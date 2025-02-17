@@ -10,9 +10,11 @@ public class Calcu_Time {
         
         Scanner sc = new Scanner(System.in);
         LocalDate fechaActual = LocalDate.now(); // Fecha actual
+        DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/mm/yyyy");
+        
         LocalTime horaActual = LocalTime.now();  // Hora actual
         LocalDateTime fechaHoraActual = LocalDateTime.now(); // Fecha y hora actual
-        DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/mm/yyyy");
+        
 
         String fechaFormateada = fechaActual.format(formato);
         
